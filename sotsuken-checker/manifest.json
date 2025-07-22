@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "卒業研究 進捗チェッカー",
+  "version": "2.0",
+  "description": "IDを設定し、アイコンクリックでマイページを開いて進捗を自動分析します。",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "analysis.js",
+        "config.js",
+        "execute.js",
+        "inject.js",
+        "lib/jquery-3.6.1.min.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}

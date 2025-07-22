@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>進捗チェッカー設定</title>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: sans-serif; padding: 20px; width: 400px; }
+    h1 { color: #484878; border-bottom: 2px solid #484878; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input[type="text"] { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+    button { display: block; margin-top: 20px; padding: 10px 20px; background-color: #484878; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    #status { margin-top: 15px; color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>卒業研究 進捗チェッカー設定</h1>
+  <div>
+    <label for="reportId">報告ページのID:</label>
+    <input type="text" id="reportId" placeholder="ここにIDを入力してください">
+  </div>
+  <button id="save">保存</button>
+  <div id="status"></div>
+  <script src="options.js"></script>
+</body>
+</html>
